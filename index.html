@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Player Transfer Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Football Player Transfer Form</h1>
+        </header>
+        <form id="transferForm">
+            <section>
+                <label for="transferDate">Transfer Date:</label>
+                <input type="date" id="transferDate" name="transferDate" required>
+            </section>
+
+            <section>
+                <label>Transfer Type:</label>
+                <label><input type="radio" name="transferType" value="Transfer" checked> Transfer</label>
+                <label><input type="radio" name="transferType" value="Loan to Buy"> Loan to Buy</label>
+                <label><input type="radio" name="transferType" value="Loan"> Loan</label>
+            </section>
+
+            <div id="transferDetails">
+                <!-- Fields for Transfer, Loan to Buy, and Loan -->
+                <!-- Dynamic fields populated by JavaScript based on Transfer Type -->
+            </div>
+
+            <button type="submit">Complete</button>
+        </form>
+    </div>
+</body>
+
+</html>
